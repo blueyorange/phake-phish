@@ -1,34 +1,20 @@
 <html>
-    <head>
-        <script>
-              const options = {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json;charset=UTF-8',
-    },
-    body: JSON.stringify({ username, password }),
-  };
-  fetch(url, options)
-    .then(res => {
-        alert(`You've been phished. Username ${res.username}`)
-    });
-        </script>
+    <head>  
+
     </head>
     <link rel="stylesheet" href="style.css">
     <body>
 
 <div class="container">
-    <form>
+    <form id="myform">
         <img src="googlelogo.png">
-        <h1>Sign in
-        </h1>
+        <h1>Sign in</h1>
       <div class="form-group">
-        <input type="text" required="required"/>
+        <input type="text" required="required" id="username"/>
         <label for="input" class="control-label">Username</label><i class="bar"></i>
       </div>
       <div class="form-group">
-        <input required="required" type="password"></input>
+        <input required="required" type="password" id="password"></input>
         <label for="textarea" class="control-label">Password</label><i class="bar"></i>
       </div>
       <div class="checkbox">
@@ -36,11 +22,19 @@
           <input type="checkbox" checked="checked"/><i class="helper"></i>Remember Me
         </label>
       </div>
+      <div class="button-container">
+        <button form="myform" class="button" type="submit"><span>Submit</span></button>
+      </div>
     </form>
-    <div class="button-container">
-      <button type="button" class="button"><span>Submit</span></button>
-    </div>
   </div>
+  <script>
+      const form = document.getElementById('myform');
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(`You've been phished. Username ${form.username.value}. Password begins with a ${form.password.value.slice(0,1)}`);
+    }
+        form.addEventListener('submit', handleSubmit);
+</script>
 </body>
 </html>
 
