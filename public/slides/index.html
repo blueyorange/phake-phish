@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>1.4.2 Identifying and preventing vulnerabilities</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/moon.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+<img src="https://blog.malwarebytes.com/wp-content/uploads/2018/09/shutterstock_749866270-900x506.jpg"/>
+---
+## You've been phished
+Your username is <span id="uname"></span> and your password strength is '<span id="passStrength"></span>'.
+
+Don't worry - I haven't saved your details!
+---
+## Discuss in pairs
+1. What is phishing?
+2. How can you avoid being a victim of phishing?
+3. WHat should you do if you fall victim to phishing?
+4. Why is password strength important?
+5. What other vulnerabilities can you recall in computer systems and networks?
+			  </textarea
+            >
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## Recap: vulnerabilities in computer systems and networks
+              ---
+              ## Malware
+              <img
+              src="https://blog.malwarebytes.com/wp-content/uploads/2018/09/shutterstock_749866270-900x506.jpg"
+              />
+              ---
+              ## Brute force attacks
+              <img src="https://www.ekransystem.com/sites/default/files/brute_force_attacks/figure-1.jpg">
+              Example: T-Mobile Aug 2021 (54 million customers' data stolen)
+              ---
+              ## Denial of Service attacks
+              <img src="https://spanning.com/wp-content/uploads/2020/06/denial-of-service-attack-example.png">
+              ---
+              ## Data interception and theft
+              <img src="https://www.mdpi.com/cryptography/cryptography-05-00029/article_deploy/html/images/cryptography-05-00029-g001.png">
+              ---
+              ## SQL injection
+              <img src="https://miro.medium.com/max/600/1*mTKfq-BXgewrnF8A57TTNw.png">
+              ---
+              ## Recap Question!
+              Strong passwords would best assist in preventing which method of attack?
+              <ol>
+
+                A. SQL injection
+
+                B. Phishing
+
+                C. Malware
+
+                D. Brute-force attacks
+              </ol>
+ 
+              </textarea
+            >
+          </section>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+                ## Learning Outcomes
+                * *Recall* some vulnerabilities in computer systems and networks
+                * For each one, *identify* a method of prevention
+* For each method, *explain* how it limits the attack
+</textarea
+          >
+        </section>
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## Preventing vulnerabilities
+              Can you think of any ways we protect our computers?
+              ---
+              ## Physical security
+              <iframe data-autoplay width="900" height="550" src="https://www.youtube.com/embed/k-oVuQpjG3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              ---
+              ## Encryption
+              <img src="https://thumbs.gfycat.com/LankyScaredGoosefish-max-1mb.gif">
+              ---
+              ## Passwords
+              <img src="https://progressny.com/wp-content/uploads/2017/08/password_strength.gif">
+              ---
+              ## User access roles
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/adfd4d30657123.562d7d8e65dcf.gif">
+              ---
+              ## Firewalls
+              <img src="https://learn.g2.com/hubfs/firewall3.gif">
+              ---
+              ## Anti-malware software
+              <img src="https://safebytes.com/wp-content/uploads/2016/08/Malware_Compromise2.gif">
+              ---
+              ## Penetration testing
+              <img src="https://miro.medium.com/max/986/1*Fl7ztxaek3yQMEWKm8hB7Q.gif">
+            </textarea>
+          </section>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+              ## Main activity
+              You will be given one prevention method to become expert in.
+
+              For your method, complete the appropriate row in the table.
+
+              There is a google docs version [here](https://docs.google.com/document/d/1_DNwtwxGAzLN2gUABqBn7eh7Ie7RgpG7DPQFOr1MZE0/copy?usp=sharing)
+
+              Use [BBC Bitesize](https://www.bbc.co.uk/bitesize/guides/zj89dxs/revision/1) to help
+            </textarea
+          >
+        </section>
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## Plenary
+              * Review the the table (editable version [here](https://docs.google.com/document/d/1_DNwtwxGAzLN2gUABqBn7eh7Ie7RgpG7DPQFOr1MZE0/edit?usp=sharing))
+              * Answer the exam question
+              * If time! [quiz](https://create.kahoot.it/details/393c50d3-846b-4abb-9b95-1b4dc384e654) (link is for me!)
+              ---
+              <div style="width: 1000px; height: 600px; overflow-y: scroll;">
+                <img src="/question.png" style="width:100%; min-height: 1200px;">
+              </div>
+            </textarea>
+          </section>
+        </section>
+      </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+    <script>
+      function scorePassword(pass) {
+        var score = 0;
+        if (!pass) return score;
+
+        // award every unique letter until 5 repetitions
+        var letters = new Object();
+        for (var i = 0; i < pass.length; i++) {
+          letters[pass[i]] = (letters[pass[i]] || 0) + 1;
+          score += 5.0 / letters[pass[i]];
+        }
+
+        // bonus points for mixing it up
+        var variations = {
+          digits: /\d/.test(pass),
+          lower: /[a-z]/.test(pass),
+          upper: /[A-Z]/.test(pass),
+          nonWords: /\W/.test(pass),
+        };
+
+        var variationCount = 0;
+        for (var check in variations) {
+          variationCount += variations[check] == true ? 1 : 0;
+        }
+        score += (variationCount - 1) * 10;
+
+        return parseInt(score);
+      }
+      function checkPassStrength(pass) {
+        var score = scorePassword(pass);
+        if (score > 80) return "strong";
+        if (score > 60) return "good";
+        if (score >= 30) return "weak";
+
+        return "";
+      }
+      document.getElementById("uname").innerHTML =
+        window.localStorage.getItem("username");
+      const passStrengthElem = (document.getElementById(
+        "passStrength"
+      ).innerHTML = checkPassStrength(localStorage.getItem("passwordInitial")));
+    </script>
+  </body>
+</html>

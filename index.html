@@ -31,9 +31,15 @@
       const form = document.getElementById('myform');
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`You've been phished. Username ${form.username.value}. Password begins with a ${form.password.value.slice(0,1)}`);
+        const username = form.username.value;
+        const password = form.password.value;
+        window.localStorage.setItem("username", username);
+        window.localStorage.setItem("passwordInitial", password);
+        window.location.href = new URL("slides/index.html",window.location.href);
     }
         form.addEventListener('submit', handleSubmit);
+        //const baseUrl =  (new URL(window.location.href)).hostname;
+
 </script>
 </body>
 </html>
